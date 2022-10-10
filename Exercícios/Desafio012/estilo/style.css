@@ -17,12 +17,12 @@
 
  html, body {
     min-height: 100vh;
-    background-color: rgba(247, 205, 141, 0.568);
+    background-color: rgba(247, 205, 141, 0.404);
     font-family: var(--font1);
  }
 
  header {
-    background-color: black;
+    background-color: rgb(136, 90, 38);
     color: white;
     text-align: center;
  }
@@ -54,9 +54,12 @@
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--font3);
-    font-size: 2.5vw;
-    
+    font-size: 3.5vw;    
         
+ }
+
+ section > p {
+   padding-bottom: 2em;
  }
 
  section.normal {
@@ -67,14 +70,38 @@
  section.imagem {
     background-color: rgba(114, 78, 25, 0.993);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(68, 52, 29, 0.568);
+    background-size: cover;
+    background-attachment: fixed;
  }
 
  section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(31, 30, 30, 0.301);
+    background-color: rgba(0, 0, 0, 0.356);   
+    text-shadow: 1px 1px 0px black; 
     
-    
+}
+
+section#img01 {
+   background-image: url('../imagens/mulheres-fantasticas_consciencia-negra_animacao.jpg');
+   background-position: right center;
+   background-size: cover;
+
+}
+
+section#img02 {
+   background-image: url('../imagens/Sem\ título.png');
+   background-position: right center;
+   background-size: cover;
+
+}
+
+section#img03 {
+   background-image: url('../imagens/Dandara.jpg');
+   background-position: left center;
+   background-size: cover;
+   
 }
 
 
