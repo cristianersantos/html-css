@@ -14,6 +14,7 @@
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative ;
         }
 
         td, th {
@@ -21,10 +22,26 @@
             padding: 10px;
         }
 
+        caption {
+            font-size:  1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        tbody > tr:nth-child(even) { /*2n-1 = odd e /*2n=even*/
+            background-color: lightgrey;
         }
 
         td.num {
@@ -37,6 +54,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION (LEGENDA DA TABELA)
             THEAD
             TR, TD, TH
         TBODY
@@ -46,10 +64,11 @@
 
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
@@ -166,12 +185,30 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>233.847.418</strong></td>
             </tr>
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iste deserunt cumque vitae architecto praesentium officia, pariatur, optio esse distinctio tenetur fugiat at eligendi magni minima unde velit, a eos!
+    Enim, autem in. Inventore dolor voluptatibus et doloribus, explicabo corrupti eaque sapiente aliquid excepturi dignissimos nam quae minima atque, veritatis quia, distinctio quos eligendi velit magni. Quod deserunt illo est.
+    Voluptas unde tempore quis quisquam, mollitia dolore dolor consequuntur reprehenderit aut quam vero nostrum temporibus autem, recusandae numquam qui hic neque cum eveniet natus asperiores aperiam maiores. Minima, nobis accusantium!
+    Repellendus sed ipsa maiores deserunt vitae cupiditate dolorem obcaecati magnam mollitia odio? Dolore, voluptates ut facere, deserunt consequuntur totam quod saepe nihil vitae et eius nostrum ipsam. Quod, at eligendi!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iste deserunt cumque vitae architecto praesentium officia, pariatur, optio esse distinctio tenetur fugiat at eligendi magni minima unde velit, a eos!
+        Enim, autem in. Inventore dolor voluptatibus et doloribus, explicabo corrupti eaque sapiente aliquid excepturi dignissimos nam quae minima atque, veritatis quia, distinctio quos eligendi velit magni. Quod deserunt illo est.
+        Voluptas unde tempore quis quisquam, mollitia dolore dolor consequuntur reprehenderit aut quam vero nostrum temporibus autem, recusandae numquam qui hic neque cum eveniet natus asperiores aperiam maiores. Minima, nobis accusantium!
+        Repellendus sed ipsa maiores deserunt vitae cupiditate dolorem obcaecati magnam mollitia odio? Dolore, voluptates ut facere, deserunt consequuntur totam quod saepe nihil vitae et eius nostrum ipsam. Quod, at eligendi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iste deserunt cumque vitae architecto praesentium officia, pariatur, optio esse distinctio tenetur fugiat at eligendi magni minima unde velit, a eos!
+            Enim, autem in. Inventore dolor voluptatibus et doloribus, explicabo corrupti eaque sapiente aliquid excepturi dignissimos nam quae minima atque, veritatis quia, distinctio quos eligendi velit magni. Quod deserunt illo est.
+            Voluptas unde tempore quis quisquam, mollitia dolore dolor consequuntur reprehenderit aut quam vero nostrum temporibus autem, recusandae numquam qui hic neque cum eveniet natus asperiores aperiam maiores. Minima, nobis accusantium!
+            Repellendus sed ipsa maiores deserunt vitae cupiditate dolorem obcaecati magnam mollitia odio? Dolore, voluptates ut facere, deserunt consequuntur totam quod saepe nihil vitae et eius nostrum ipsam. Quod, at eligendi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iste deserunt cumque vitae architecto praesentium officia, pariatur, optio esse distinctio tenetur fugiat at eligendi magni minima unde velit, a eos!
+                Enim, autem in. Inventore dolor voluptatibus et doloribus, explicabo corrupti eaque sapiente aliquid excepturi dignissimos nam quae minima atque, veritatis quia, distinctio quos eligendi velit magni. Quod deserunt illo est.
+                Voluptas unde tempore quis quisquam, mollitia dolore dolor consequuntur reprehenderit aut quam vero nostrum temporibus autem, recusandae numquam qui hic neque cum eveniet natus asperiores aperiam maiores. Minima, nobis accusantium!
+                Repellendus sed ipsa maiores deserunt vitae cupiditate dolorem obcaecati magnam mollitia odio? Dolore, voluptates ut facere, deserunt consequuntur totam quod saepe nihil vitae et eius nostrum ipsam. Quod, at eligendi!</p>
+                            
     
 </body>
 </html>
